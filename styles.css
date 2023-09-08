@@ -156,7 +156,7 @@ html{
     
     main img{
         width: 250px;
-        height: 220px;
+        height: 250px;
     
     }
 
@@ -175,7 +175,7 @@ html{
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
-    height: 245px;
+    height: 265px;
     width: 832px;
     }
     
@@ -193,12 +193,12 @@ html{
     
     
     h3{
-    font-size: 15px;
+    font-size: 17px;
     position: absolute;
     bottom: 10px;
     top: 160px;
     left:510px;
-    height: 40px;
+    height: 66px;
     text-align: left;
     padding-top: 8px;
     padding-left: 10px;
@@ -217,16 +217,27 @@ html{
     
    
     
-    dt{
+    main dt{
     
     position: relative;
-    bottom: 20px;
+    bottom: 45px;
     left: 510px;
     z-index: 2000;
     font-size: 12px;
     color:#590242 ;
+    font-size: 17px;
     }
     
+
+    main dd{
+        display: inline;
+        z-index: 100000;
+        position: relative;
+        bottom: 65px;
+        color: #ffffff;
+        left:530px;
+        color:#590242 ;
+    }
     section img {
 
         position: relative;
@@ -236,7 +247,7 @@ html{
     audio {
     
         position: relative;
-        bottom: 150px;
+        bottom: 235px;
         left: 505px;
         border-radius: 5px;
         width: 240px;
@@ -539,7 +550,7 @@ bottom: 40px;
       
         header{
             margin: 0;
-            padding: auto;
+           
             position: relative;
         
             background-color:#020873;
@@ -660,7 +671,7 @@ bottom: 40px;
             bottom: 10px;
             top: 160px;
             left: 510px;
-            height: 40px;
+            height: 67px;
             text-align: left;
             padding-top: 8px;
             padding-left: 10px;
