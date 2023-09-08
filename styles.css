@@ -72,17 +72,16 @@ html{
         
     
     }
-    li:hover{
-        
-        background-color: #e73061;
-        
-    }
+  
     a{
         font-size: 11px;
         color: white;
         text-decoration: none;
         font-weight:bolder;
     
+    }
+    .menu li:nth-child(1) a:hover {
+        background-color: #e73061;
     }
     
     
