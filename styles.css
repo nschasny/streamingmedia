@@ -8,7 +8,7 @@ html{
     
     body{
     margin: 0 auto;
-    width: 834px;
+    max-width: 834px;
     background-color:white;
     height: 100%;
     }
@@ -531,8 +531,33 @@ bottom: 40px;
     h2, h3 {font-size: 1em;}
     h1 {font-size:1.25em;}
 
+    body {
+        overflow-x: hidden; /* This will hide the horizontal scrollbar */
+      }
+      
+      .grid-container {
+        overflow-x: hidden; /* Hide horizontal scrollbar within the grid container */
+      }
+      
+      /* Add this if necessary */
+      .scroll-container {
+        display: flex;
+        overflow-x: auto;
+      }
+      
+      /* Optional: Add this if you want to allow scrolling on small screens */
+      @media (min-width: 700px) {
+        body {
+          overflow-x: auto; /* Allow scrolling on small screens */
+        }
+      
+        .grid-container,
+        .scroll-container {
+          overflow-x: auto; /* Allow scrolling on small screens */
+        }
+      }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 700px) {
 
         html{
 
@@ -721,8 +746,8 @@ bottom: 40px;
     }
 
         .scroll{
-            padding-left: 360px;
-            width: 20vw;
+            padding-left: 300px;
+            width: 270px;
             overflow-x: auto;
         }
 
