@@ -176,7 +176,7 @@ html{
     overflow-x: auto;
     overflow-y: hidden;
     height: 265px;
-    width: 732px;
+    width: 832px;
     }
     
     .scroll section{
@@ -546,12 +546,18 @@ bottom: 40px;
       }
       
       /* Optional: Add this if you want to allow scrolling on small screens */
-     
-    @media screen and (max-width: 700px) {
-
-        img{
-            width:75%;
+      @media (min-width: 700px) {
+        body {
+          overflow-x: auto; /* Allow scrolling on small screens */
         }
+      
+        .grid-container,
+        .scroll-container {
+          overflow-x: auto; /* Allow scrolling on small screens */
+        }
+      }
+
+    @media screen and (max-width: 700px) {
 
         html{
 
@@ -562,7 +568,6 @@ bottom: 40px;
 
         body {
             margin: 0 auto;
-            width:900px;
         }
         input, label{
             position: relative;
@@ -740,17 +745,11 @@ bottom: 40px;
         z-index: 100;
     }
 
-    .scroll {
-        display: grid;
-        position: relative;
-        justify-content: center;
-        grid-template-columns: repeat(5, 1fr);
-        overflow-x: auto;
-        overflow-y: hidden;
-        height: 265px;
-        /* Remove or adjust the following line */
-        /* width: 832px; */
-    }
+        .scroll{
+            padding-left: 300px;
+            width: 270px;
+            overflow-x: auto;
+        }
 
             
         .left-div, .right-div {
@@ -774,7 +773,7 @@ bottom: 40px;
     .left-div, .right-div {
         margin-top: 25px;
        
-        width: 70%;
+        width: 40%;
         height: 240px;
     }
     
@@ -784,7 +783,7 @@ bottom: 40px;
         overflow-y: hidden;
         overflow-x: auto;
         background-color: #2699FB;
-        width: 470px;
+        width: 380px;
         
     
     }
@@ -796,7 +795,7 @@ bottom: 40px;
         background-color: #020873;
         position: relative;
         top:90px;
-        width: 470px;
+        width: 380px;
     
     }
 
@@ -1017,8 +1016,30 @@ top:-60px;
         max-height: 0;
         transition: max-height .2s ease-out;
     }
- 
-   
+    label {
+        cursor: pointer;
+        display: inline-block;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    label span {
+        background-color: #ffffff;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background-color .2s ease-out;
+        width: 18px;
+    }
+    label span:before, label span:after {
+        background: #ffffff;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
     label span:before {
         top: 5px;
     }
@@ -1050,21 +1071,6 @@ top:-60px;
     h2, h3 {font-size: 1em;}
     h1 {font-size:1.25em;}
 
-        }
-
-        .scroll {
-            display: flex;
-            overflow-x: auto;
-            overflow-y: hidden;
-            width: 100%; /* Adjust this value based on your design */
-        }
-        
-        .scroll section {
-            /* Adjust the styles for individual items within the scroll container as needed */
-            margin-right: 20px;
-            padding-left: 10px;
-            position: relative;
-            left:-16px;
         }
     
   
