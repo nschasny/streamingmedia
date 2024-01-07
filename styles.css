@@ -562,6 +562,7 @@ bottom: 40px;
 
         body {
             margin: 0 auto;
+            width:900px;
         }
         input, label{
             position: relative;
